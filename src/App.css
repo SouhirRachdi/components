@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+  height: 100vh;
+  background: url(https://images.unsplash.com/photo-1476458393436-fb857cc4c7b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80) no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-card{
+  width: 400px;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-header{
+  background:rgb(226, 147, 0);
+  padding: 60px 40px;
+}
+
+.pic{
+  display: inline-block;
+  padding: 6px;
+  background: linear-gradient(130deg, #ff74a9, #80e667);
+  margin: auto;
+  border-radius: 50%;
+  background-size: 200% 200%;
+  animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient{
+  25%{
+    background-position: left bottom;
+  }
+  50%{
+    background-position: right bottom;
+  }
+  75%{
+    background-position: right top;
+  }
+  100%{
+    background-position: left top;
+  }
+}
+
+.pic img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius:50%;
+}
+
+.my-name{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:black;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.Dev{
+  color: #6d5f5f;
+  font-size: 15px;
+  font-family: monospace;
+}
+.Addres{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:black;
+}
+.street{
+  color: #6d5f5f;
+  font-family: monospace;
+  font-size: large;
+
+}
+
+
+.sm{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.sm a{
+  color: #e0b86e;
+  width: 56px;
+  font-size: 22px;
+  transition: .3s linear;
+}
+
+.sm a:hover{
+  color: #b67828;
+}
+
+
